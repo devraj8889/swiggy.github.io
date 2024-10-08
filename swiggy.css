@@ -1,0 +1,234 @@
+body {
+    width: 100%;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    cursor: pointer;
+}
+
+header {
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    padding: 15px 10%;
+    background-color: white;
+    box-shadow: 0 5px 20px rgb(232, 232, 232);
+    width: 100%;
+    z-index: 1000;
+}
+
+header>p {
+    font-weight: 600;
+    border-bottom: 2px solid #3d4152;
+    font-size: 14px;
+    padding-bottom: 3px;
+    margin-left: 50px;
+}
+
+header>p:hover {
+    color: #ff5200;
+    border-bottom: 2px solid #ff5200;
+}
+
+header>nav>ul {
+    gap: 60px;
+}
+
+header>nav>ul>li {
+    gap: 8px;
+}
+
+header>nav>ul>:hover {
+    color: #ff5200;
+}
+
+.title {
+    letter-spacing: -0.10px;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.zoom {
+    padding: 5px;
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(0.9);
+}
+
+hr {
+    border: 1px solid rgba(2, 6, 12, 0.05);
+    margin-top: 50px;
+}
+
+.form-react {
+    border: 1px solid#e8e5e5;
+    border-radius: 50px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.percent {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+}
+
+.dropdownn {
+    border: 1px solid#e8e5e5;
+    border-radius: 20px;
+    /* padding: 5px 10px; */
+    outline: none;
+}
+
+.dropdown-toggle {
+    display: none;
+}
+
+.dropbtn {
+    /* background-color: #4CAF50;
+    color: white; */
+    padding: 0px 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(2, 6, 12, 0.75);
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content label {
+    padding: 5px 20px;
+    display: block;
+}
+
+.dropdown-toggle:checked+.dropbtn+.dropdown-content {
+    display: block;
+}
+
+.dropdown-content input {
+    margin-right: 8px;
+}
+
+.leadd {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    color: rgb(255, 82, 0);
+    padding: 0px 0px 15px 10px;
+    border: 0px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.form-checkk {
+    max-width: 100%;
+    min-width: 255px;
+    height: 170px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(255, 255, 255, 0.92);
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    align-items: end;
+    display: flex;
+    border-image: fill 0 linear-gradient(180deg, rgba(0, 37, 91, 0) 24%, rgba(0, 0, 0, 0.3394607843137255) 66%, rgba(0, 0, 0, 1) 100%);
+}
+
+.form-checkk-input {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(2, 6, 12, 0.92);
+    letter-spacing: -0.10px;
+    padding-top: 12px;
+}
+
+.form-checkk-reverse {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.92);
+}
+
+.form-checkk-focus {
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.6);
+}
+
+.form-react-input {
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid#e8e5e5;
+    padding: 12px;
+    text-align: center;
+    width: 23%;
+    color: rgba(2, 6, 12, 0.75);
+    font-weight: 500;
+}
+
+footer {
+    padding: 50px 17%;
+    background-color: rgb(240, 240, 245);
+    height: 100%;
+}
+
+.borderr {
+    border-top: 1px solid rgba(2, 6, 12, 0.75);
+    margin: 50px 15% 0;
+    padding: 24px 0px 32px;
+}
+
+footer>div>p {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 31px;
+    width: 100%;
+    letter-spacing: -0.6px;
+    color: rgba(2, 6, 12, 0.75);
+}
+
+.form-controll {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.92);
+}
+
+.form-controll-input {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.7);
+    padding-top: 15px;
+}

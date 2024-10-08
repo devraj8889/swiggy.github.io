@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="swiggy.css" />
+    <link rel="shortcut icon" href="img/favicon-16x16.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiggy</title>
+    <script src="https://kit.fontawesome.com/1a5adda433.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .slider {
+            width: 100%;
+        }
+
+        .slick-slide {
+            margin: 0px 10px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: 1;
+        }
+
+        .slick-active {
+            opacity: 1;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flexbox ">
+        <div>
+            <svg class="_8pSp-" viewBox="0 0 559 825" height="49" width="34" fill="#ff5200">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M542.92 388.542C546.805 366.526 542.355 349.598 530.881 340.76C513.621 327.466 487.698 320.236 425.954 320.236C380.271 320.236 331.225 320.286 310.268 320.275C308.322 319.894 301.285 317.604 301.02 309.112L300.734 174.289C300.727 165.779 307.531 158.857 315.943 158.839C324.369 158.825 331.204 165.723 331.211 174.226C331.211 174.226 331.421 247.414 331.441 273.424C331.441 275.936 332.892 281.8 338.549 283.328C375.43 293.267 561.865 285.999 558.967 251.804C543.147 109.96 424.476 0 280.394 0C235.021 0 192.065 10.9162 154.026 30.2754C62.9934 77.5955 -1.65904 173.107 0.0324268 283.43C1.23215 361.622 52.2203 500.605 83.434 521.234C97.8202 530.749 116.765 527.228 201.484 527.228C239.903 527.228 275.679 527.355 293.26 527.436C295.087 527.782 304.671 530.001 304.671 538.907L304.894 641.393C304.915 649.907 298.104 656.826 289.678 656.829C281.266 656.843 274.434 649.953 274.42 641.446C274.42 641.446 275.17 600.322 275.17 584.985C275.17 581.435 275.424 575.339 265.178 570.727C231.432 555.553 121.849 564.712 115.701 581.457C113.347 587.899 125.599 612.801 144.459 644.731C170.102 685.624 211.889 747.245 245.601 792.625C261.047 813.417 268.77 823.813 280.467 824.101C292.165 824.389 300.514 814.236 317.213 793.928C383.012 713.909 516.552 537.663 542.92 388.542Z"
+                    fill="url(#paint0_linear_19447_66107)"></path>
+                <defs>
+                    <linearGradient id="paint0_linear_19447_66107" x1="445.629" y1="63.8626" x2="160.773" y2="537.598"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FF993A"></stop>
+                        <stop offset="1" stop-color="#FF5200"></stop>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+        <p>Other</p>
+        <hr>
+        <nav>
+            <ul class="flexbox">
+                <li class="flexbox">
+                    <i class="fa-solid fa-laptop"></i>
+                    <span>Swiggy Corporate</span>
+                </li>
+                <li class="flexbox">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </li>
+                <li class="flexbox">
+                    <i class="fi fi-rr-badge-percent"></i>
+                    <span class="offer">Offers</span>
+                </li>
+                <li class="flexbox">
+                    <i class="fa-brands fa-hire-a-helper"></i>
+                    <span>Help</span>
+                </li>
+                <li class="flexbox">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Sign In</span>
+                </li>
+                <li class="flexbox">
+                    <i class="fa-solid fa-box"></i>
+                    <span>Cart</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div style="padding: 0px 13%;">
+        <h2 class="title" style="padding-top: 20px;">
+            What's on your mind?
+        </h2>
+        <div class="flexbox">
+            <section class="regular slider">
+                <img src="img/North Indian.avif" alt="North Indian">
+                <img src="img/Pizzas.avif" alt="Pizzas">
+                <img src="img/burger.avif" alt="burger">
+                <img src="img/Rolls.avif" alt="Rolls">
+                <img src="img/chole bhature.avif" alt="chole bhature">
+                <img src="img/Biryani.avif" alt="Biryani">
+                <img src="img/Chinese.avif" alt="Chinese">
+                <img src="img/Dosa.avif" alt="Dosa">
+                <img src="img/cake.avif" alt="cake">
+                <img src="img/Noodles.avif" alt="Noodles">
+                <img src="img/Paratha.avif" alt="Paratha">
+                <img src="img/Salad.avif" alt="Salad">
+                <img src="img/Poori.avif" alt="Poori">
+                <img src="img/pasta.avif" alt="pasta">
+            </section>
+        </div>
+        <hr>
+        <h2 class="title">
+            Top restaurant chains in Delhi
+        </h2>
+        <div class="flexbox">
+            <section class="regular2 slider">
+                <div class="zoom">
+                    <div style=" background-image: url(img/Chinese\ Wok.avif);  " class="form-checkk">
+                        ITEMS AT ₹149
+                    </div>
+                    <div class="form-checkk-input">
+                        Chinese Wok
+                    </div>
+                    <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                    </i>
+                    <span class="form-checkk-reverse">
+                        4.3 • 50-55 mins
+                    </span>
+                    <div class="form-checkk-focus">
+                        Bakery, Ice Cream, Snacks, Beverages
+                        <br>
+                        <span>Parasia Road</span>
+                    </div>
+                </div>
+                <div class="zoom">
+                    <div style="background-image: url(img/1.jpg);" class="form-checkk">
+                        ITEMS AT ₹149
+                    </div>
+                    <div class="form-checkk-input">
+                        Subway
+                    </div>
+                    <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                    </i>
+                    <span class="form-checkk-reverse">
+                        4.3 • 50-55 mins
+                    </span>
+                    <div class="form-checkk-focus">
+                        Salads, Snacks, Desserts, Beverages
+                        <br>
+                        <span>Basavanagudi</span>
+                    </div>
+                </div>
+                <div class="zoom">
+                    <div style="background-image: url(img/2..jfif); " class="form-checkk">
+                        ITEMS AT ₹149
+                    </div>
+                    <div class="form-checkk-input">
+                        Burger King
+                    </div>
+                    <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                    </i>
+                    <span class="form-checkk-reverse">
+                        4.3 • 50-55 mins
+                    </span>
+                    <div class="form-checkk-focus">
+                        Burgers, American
+                        <br>
+                        <span>Basavanagudi</span>
+                    </div>
+                </div>
+                <div class="zoom">
+                    <div style="background-image: url(img/3.jfif);" class="form-checkk">
+                        ITEMS AT ₹149
+                    </div>
+                    <div class="form-checkk-input">
+                        Kwality Walls Ice Cream and More
+                    </div>
+                    <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                    </i>
+                    <span class="form-checkk-reverse">
+                        4.3 • 50-55 mins
+                    </span>
+                    <div class="form-checkk-focus">
+                        Desserts, Ice Cream, Ice Cream Cakes
+                        <br>
+                        <span>Shanthinagar</span>
+                    </div>
+                </div>
+                <div class="zoom">
+                    <div style="background-image: url(img/4.jfif); " class="form-checkk">
+                        ITEMS AT ₹149
+                    </div>
+                    <div class="form-checkk-input">
+                        Andhra Gunpowder
+                    </div>
+                    <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                    </i>
+                    <span class="form-checkk-reverse">
+                        4.3 • 50-55 mins
+                    </span>
+                    <div class="form-checkk-focus">
+                        Andhra, Biryani, South Indian
+                        <br>
+                        <span>Seshadripuram</span>
+                    </div>
+                </div>
+                <div class="zoom">
+                    <div style="background-image: url(img/5.jfif);" class="form-checkk">
+                        ITEMS AT ₹149
+                    </div>
+                    <div class="form-checkk-input">
+                        Great Indian Khichdi by EatFit
+                    </div>
+                    <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                    </i>
+                    <span class="form-checkk-reverse">
+                        4.3 • 50-55 mins
+                    </span>
+                    <div class="form-checkk-focus">
+                        Home Food, Indian, Healthy Food, Snacks,
+                        <br>
+                        <span>ADUGODI</span>
+                    </div>
+                </div>
+                <div class="zoom">
+                    <div style="background-image: url(img/6.avif);" class="form-checkk">
+                        ITEMS AT ₹149
+                    </div>
+                    <div class="form-checkk-input">
+                        A2B - Adyar Ananda Bhavan
+                    </div>
+                    <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                    </i>
+                    <span class="form-checkk-reverse">
+                        4.3 • 50-55 mins
+                    </span>
+                    <div class="form-checkk-focus">
+                        South Indian, North Indian, Sweets, Chinese
+                        <br>
+                        <span>Basavanagudi</span>
+                    </div>
+                </div>
+                <div class="zoom">
+                    <div style="background-image: url(img/7.avif);" class="form-checkk">
+                        ITEMS AT ₹149
+                    </div>
+                    <div class="form-checkk-input">
+                        McDonald's
+                    </div>
+                    <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                    </i>
+                    <span class="form-checkk-reverse">
+                        4.3 • 50-55 mins
+                    </span>
+                    <div class="form-checkk-focus">
+                        Burgers, Beverages, Cafe, Desserts
+                        <br>
+                        <span>Basavanagudi</span>
+                    </div>
+                </div>
+                <div class="zoom">
+                    <div style="background-image: url(img/8.avif);" class="form-checkk">
+                        ITEMS AT ₹149
+                    </div>
+                    <div class="form-checkk-input">
+                        KFC
+                    </div>
+                    <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                    </i>
+                    <span class="form-checkk-reverse">
+                        4.3 • 50-55 mins
+                    </span>
+                    <div class="form-checkk-focus">
+                        Theobroma
+                        <br>
+                        <span>Basavanagudi</span>
+                    </div>
+                </div>
+                <div class="zoom">
+                    <div style="background-image: url(img/9.avif);" class="form-checkk">
+                        ITEMS AT ₹149
+                    </div>
+                    <div class="form-checkk-input">
+                        Theobroma
+                    </div>
+                    <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                    </i>
+                    <span class="form-checkk-reverse">
+                        4.3 • 50-55 mins
+                    </span>
+                    <div class="form-checkk-focus">
+                        Desserts, Bakery, Beverages
+                        <br>
+                        <span>Ashok Nagar</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <hr>
+        <h2 class="title">Restaurants with online food delivery in Bangalore</h2>
+        <div class="flexbox">
+            <div class="form-react">
+                Filter
+                <i class="fi fi-rr-settings-sliders" style="padding-left: 5px;"></i>
+            </div>
+            <div class="form-react ">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                <label for="dropdown-toggle" class="dropbtn "> Sort By <i
+                        class="fa-solid fa-caret-down ps-2"></i></label>
+                <div class="dropdown-content dropdownn">
+                    <label>
+                        <input type="radio" name="options" value="Relevance(Default)"> Relevance(Default)
+                    </label>
+                    <label>
+                        <input type="radio" name="options" value="DeliveryTime">DeliveryTime
+                    </label>
+                    <label>
+                        <input type="radio" name="options" value="Rating"> Rating
+                    </label>
+                    <label>
+                        <input type="radio" name="options" value="Cost:LowtoHigh"> Cost:LowtoHigh
+                    </label>
+                    <label>
+                        <input type="radio" name="options" value="Cost:HightoLow"> Cost:HightoLow
+                    </label>
+                    <hr>
+                    <button value="apply" class="leadd">Apply</button>
+                </div>
+            </div>
+            <div class="form-react percent">
+                Fast Delivery
+            </div>
+            <div class="form-react percent">
+                New on Swiggy
+            </div>
+            <div class="form-react percent">
+                Ratings 4.0+
+            </div>
+            <div class="form-react percent">
+                Pure Veg
+            </div>
+            <div class="form-react percent">
+                Offers
+            </div>
+            <div class="form-react percent">
+                Rs. 300-Rs. 600
+            </div>
+            <div class="form-react percent">
+                Less than Rs. 300
+            </div>
+        </div>
+        <div class="mt-4 flexbox">
+            <div class="zoom">
+                <div style=" background-image: url(img/Chinese\ Wok.avif); " class="form-checkk">
+                    ITEMS AT ₹149
+                </div>
+                <div class="form-checkk-input">
+                    Chinese Wok
+                </div>
+                <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                </i>
+                <span class="form-checkk-reverse">
+                    4.3 • 50-55 mins
+                </span>
+                <div class="form-checkk-focus">
+                    Chinese, Asian, Tibetan, Desserts
+                    <br>
+                    <span>Omaxe mall</span>
+                </div>
+            </div>
+            <div class="zoom">
+                <div style=" background-image: url(img/10.jfif); " class="form-checkk">
+                    30% OFF UPTO ₹75
+                </div>
+                <div class="form-checkk-input">
+                    KFC
+                </div>
+                <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                </i>
+                <span class="form-checkk-reverse">
+                    4.3 • 50-55 mins
+                </span>
+                <div class="form-checkk-focus">
+                    Burgers, Rolls & Wraps, Fast Food
+                    <br>
+                    <span>Chandni Chowk</span>
+                </div>
+            </div>
+            <div class="zoom">
+                <div style="background-image: url(img/2..jfif);" class="form-checkk">
+                    ITEMS AT ₹149
+                </div>
+                <div class="form-checkk-input">
+                    Burger King
+                </div>
+                <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                </i>
+                <span class="form-checkk-reverse">
+                    4.3 • 50-55 mins
+                </span>
+                <div class="form-checkk-focus">
+                    Burgers, American
+                    <br>
+                    <span>Basavanagudi</span>
+                </div>
+            </div>
+            <div class="zoom">
+                <div style=" background-image: url(img/11.jpg); " class="form-checkk">
+                    50% OFF UPTO ₹100
+                </div>
+                <div class="form-checkk-input">
+                    Subway
+                </div>
+                <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                </i>
+                <span class="form-checkk-reverse">
+                    3.9 • 40-45 mins
+                </span>
+                <div class="form-checkk-focus">
+                    Salads, Snacks, Desserts, Beverages
+                    <br>
+                    <span>Food Forum food court</span>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 flexbox">
+            <div class="zoom">
+                <div style=" background-image: url(img/12.avif); " class="form-checkk">
+                    20% OFF UPTO ₹50
+                </div>
+                <div class="form-checkk-input">
+                    Prem Dhaba
+                </div>
+                <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                </i>
+                <span class="form-checkk-reverse">
+                    4.3 • 35-40 mins
+                </span>
+                <div class="form-checkk-focus">
+                    North Indian
+                    <br>
+                    <span>Karol Bagh</span>
+                </div>
+            </div>
+            <div class="zoom">
+                <div style=" background-image: url(img/13.avif);" class="form-checkk">
+                    ITEMS AT ₹129
+                </div>
+                <div class="form-checkk-input">
+                    Barista Coffee
+                </div>
+                <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                </i>
+                <span class="form-checkk-reverse">
+                    4.3 • 40-45 mins
+                </span>
+                <div class="form-checkk-focus">
+                    Beverages, Fast Food, Snacks,
+                    <br>
+                    <span>Karol Bagh</span>
+                </div>
+            </div>
+            <div class="zoom">
+                <div style="background-image: url(img/14.avif);" class="form-checkk">
+                    40% OFF UPTO ₹80
+                </div>
+                <div class="form-checkk-input">
+                    Nirula's
+                </div>
+                <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                </i>
+                <span class="form-checkk-reverse">
+                    4.3 • 30-35 mins
+                </span>
+                <div class="form-checkk-focus">
+                    Ice Cream, Pizzas, Fast Food
+                    <br>
+                    <span>Connaught Place</span>
+                </div>
+            </div>
+            <div class="zoom">
+                <div style=" background-image: url(img/15.avif); " class="form-checkk">
+                    50% OFF UPTO ₹100
+                </div>
+                <div class="form-checkk-input">
+                    Biryani Badshah
+                </div>
+                <i class="fa-solid fa-star" style="color: rgb(6, 127, 86);">
+                </i>
+                <span class="form-checkk-reverse">
+                    3.9 • 30-35 mins
+                </span>
+                <div class="form-checkk-focus">
+                    Biryani, Mughlai, North Indian
+                    <br>
+                    <span>Connaught Place</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 0px 8%;">
+        <hr>
+        <h2 class="title">Best Cuisines Near Me</h2>
+        <div class="flexbox" style="padding: 10px; ">
+            <div class="form-react-input">
+                Chinese Restaurant Near Me
+            </div>
+            <div class="form-react-input">
+                South Indian Restaurant Near Me
+            </div>
+            <div class="form-react-input">
+                Indian Restaurant Near Me
+            </div>
+            <div class="form-react-input">
+                Kerala Restaurant Near Me
+            </div>
+        </div>
+        <div class="flexbox" style="padding: 10px;">
+            <div class="form-react-input">
+                Korean Restaurant Near Me
+            </div>
+            <div class="form-react-input">
+                North Indian Restaurant Near Me
+            </div>
+            <div class="form-react-input">
+                Seafood Restaurant Near Me
+            </div>
+            <div class="form-react-input">
+                Bengali Restaurant Near Me
+            </div>
+        </div>
+        <div class="flexbox" style="padding: 10px; ">
+            <div class="form-react-input">
+                Punjabi Restaurant Near Me
+            </div>
+            <div class="form-react-input">
+                Andhra Restaurant Near Me
+            </div>
+            <div class="form-react-input">
+                Italian Restaurant Near Me
+            </div>
+            <div class="form-react-input">
+                Biryani Restaurant Near Me
+            </div>
+        </div>
+    </div>
+    <div class="borderr"></div>
+    <footer>
+        <div class="flexbox">
+            <p>
+                For better experience,download the Swiggy app now
+            </p>
+            <div class="flexbox">
+                <img src="img/play_store.avif" alt="play_store" style="width: 195px; margin-right: 10px;">
+                <img src="img/app_store.avif" alt="app_store" style="width: 185px;">
+            </div>
+        </div>
+        <div style="margin-top: 100px; display: flex; justify-content: space-between;">
+            <div>
+                <img src="img/swiggyfooterlogo.webp" alt="footerlogo" style="width: 190px; ">
+                <br>
+                <span style="padding-left: 15px;">© 2024 Swiggy Limited</span>
+            </div>
+            <div>
+                <div class="form-controll">Company</div>
+                <div class="form-controll-input">About Us</div>
+                <div class="form-controll-input">Swiggy Corporate</div>
+                <div class="form-controll-input">Careers</div>
+                <div class="form-controll-input">Team</div>
+                <div class="form-controll-input">Swiggy One</div>
+                <div class="form-controll-input">Swiggy Instamart</div>
+                <div class="form-controll-input">Swiggy Dineout</div>
+                <div class="form-controll-input">Swiggy Genie</div>
+
+            </div>
+            <div>
+                <div class="form-controll">Contact us</div>
+                <div class="form-controll-input">Help & Support</div>
+                <div class="form-controll-input">Partner with us</div>
+                <div class="form-controll-input">Ride with us</div>
+                <div style="padding-top: 80px;">
+                    <div class="form-controll">Legal</div>
+                    <div class="form-controll-input">Terms & Conditions</div>
+                    <div class="form-controll-input">Cookie Policy</div>
+                    <div class="form-controll-input">Privacy Policy</div>
+                    <div class="form-controll-input">Investor Relations</div>
+                </div>
+            </div>
+            <div>
+                <div class="form-controll">Available in:</div>
+                <div class="form-controll-input">Bangalore</div>
+                <div class="form-controll-input">Gurgaon</div>
+                <div class="form-controll-input">Hyderabad</div>
+                <div class="form-controll-input">Delhi</div>
+                <div class="form-controll-input">Mumbai</div>
+                <div class="form-controll-input">Pune</div>
+            </div>
+            <div>
+                <div class="form-controll">Life at Swiggy</div>
+                <div class="form-controll-input">Explore with Swiggy</div>
+                <div class="form-controll-input">Swiggy News</div>
+                <div class="form-controll-input">Snackables</div>
+                <div style="padding-top: 80px;">
+                    <div class="form-controll">Social Links</div>
+                </div>
+                <div style="display: flex;  justify-content: space-between; gap: 12px;  padding-top: 10px;">
+                    <a href="#">
+                        <img src="img/icon-linkedin.png" alt="linkedin" style="height: 16px;">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-instagram.png" alt="instagram" style="height: 16px;">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-facebook.png" alt="facebook" style="height: 18px;">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-pinterest.png" alt="pinterest" style="height: 16px;">
+                    </a>
+                    <a href="#">
+                        <img src="img/icon-twitter.png" alt="twitter" style="height: 14px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="slick/slick.js" type="text/javascript" 50-55 minscharset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+        });
+        $(".regular ").slick({
+            dots: false,
+            arrows: true,
+            infinite: false,
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+
+            pauseOnHover: true,
+
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+        $(document).on('ready', function () {
+        });
+        $(".regular2 ").slick({
+            dots: false,
+            arrows: true,
+            infinite: false,
+            slidesToShow: 3.5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+
+            pauseOnHover: true,
+
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    </script>
+</body>
+
+</html>
